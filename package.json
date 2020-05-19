@@ -1,0 +1,50 @@
+{
+  "name": "react_template_repo",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha server/tests",
+    "install-all": "concurrently \"npm install\" \"cd client && npm install\"",
+    "client": "cd client && npm start",
+    "server": "nodemon server/server.js",
+    "dev": "concurrently \"nodemon server/server.js\" \"cd client && npm run start\"",
+    "build": "cd client && npm build",
+    "start": "node server/server.js",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UFWebApps/React_Template_Repo.git"
+  },
+  "keywords": [],
+  "author": "Dakota Rennemann",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^6.2.1",
+    "mongoose": "^5.7.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.18.10",
+    "react-bootstrap": "^1.0.0-beta.14",
+    "react-loader-spinner": "^3.1.4",
+    "react-truncate": "^2.4.0",
+    "request": "^2.88.0",
+    "should": "^13.2.3",
+    "stripe": "^7.14.0",
+    "supertest": "^4.0.2"
+  },
+  "homepage": "https://github.com/UFWebApps/React_Template_Repo#readme",
+  "bugs": {
+    "url": "https://github.com/UFWebApps/React_Template_Repo/issues"
+  }
+}
