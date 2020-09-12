@@ -1,3 +1,6 @@
+This is was for a class project where our team of 4 was paired with a client who had a specific need for a web app. Our client wanted a web app where companies could list their internships and high school students could be matched to internships that they aligned with.  
+
+
 # Major APIs, Software Used
 - Stripe Payments API
 - Bootstrap 4
